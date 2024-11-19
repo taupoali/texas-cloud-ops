@@ -12,8 +12,8 @@ Resources:
 #App Server Definitions
   AppServer1:
     Type: AWS::EC2::Instance
+    DeletionPolicy: Delete
     Properties:
-      DeletionPolicy: "Delete"
       AvailabilityZone: !Join
               - ''
               - - !Ref 'AWS::Region'
@@ -32,8 +32,8 @@ Resources:
 
   AppServer2:
     Type: AWS::EC2::Instance
+    DeletionPolicy: Delete
     Properties:
-      DeletionPolicy: "Delete"
       AvailabilityZone: !Join
               - ''
               - - !Ref 'AWS::Region'
@@ -54,8 +54,8 @@ Resources:
 #Web Server Definitions
   WebServer1:
     Type: AWS::EC2::Instance
+    DeletionPolicy: Delete
     Properties:
-      DeletionPolicy: "Delete"
       AvailabilityZone: !Join
               - ''
               - - !Ref 'AWS::Region'
@@ -74,8 +74,8 @@ Resources:
 
   WebServer2:
     Type: AWS::EC2::Instance
+    DeletionPolicy: Delete
     Properties:
-      DeletionPolicy: "Delete"
       AvailabilityZone: !Join
               - ''
               - - !Ref 'AWS::Region'
